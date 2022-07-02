@@ -1,4 +1,4 @@
-# dapper
+# helix-dap-erlang-walkthrough
 
 An example and walkthrough for debugging an Erlang program with
 [Helix](https://github.com/helix-editor/helix) and
@@ -13,6 +13,10 @@ with some changes. Different from the tutorial, we'll use
 
 Just want a preview? Check out the [asciicast of the debug session].
 
+We'll setup our local environment with everything we need to debug,
+write a "hello world" Cowboy server named `dapper` and set a breakpoint
+within.
+
 ## Step 0: Install
 
 **Helix**: https://docs.helix-editor.com/install.html
@@ -25,7 +29,7 @@ for this walkthrough, but the newer version the better.
 
 > Note: the current `master` build of ErlangLS has some bugs which
 > I'll address in PRs soon. In the meantime, you can build from
-> [my fork](https://github.com/the-mikedavis/erlang_ls/tree/95c85ee607622156327396fc71aa0dfae5d8b21c).
+> [my fork](https://github.com/the-mikedavis/erlang_ls/tree/nopr-flake-dap-fixes).
 
 You'll need the `els_dap` command in `PATH`.
 
@@ -35,6 +39,10 @@ Erlang is nearly ubiquitous in package managers. For this walkthrough I
 used OTP-25 as well as `rebar3` and ErlangLS compiled with OTP-25.
 
 **Rebar3**: https://rebar3.readme.io/docs/getting-started
+
+> Are you using Nix? This repository has a Nix flake and a `shell.nix`.
+> Use `nix develop` (flakes) or `nix-shell` to drop into a shell with
+> all dependencies available.
 
 ## Step 1: An example project
 
