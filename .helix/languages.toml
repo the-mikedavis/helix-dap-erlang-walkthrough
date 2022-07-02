@@ -1,0 +1,21 @@
+[[language]]
+name = "erlang"
+
+[language.debugger]
+name = "els_dap"
+transport = "stdio"
+command = "els_dap"
+
+[[language.debugger.templates]]
+name = "Existing Erlang Node"
+request = "attach"
+completion = [ "NodeName", "Cookie", { name = "Working Directory", completion = "directory", default = "." } ]
+args = { projectnode = "{0}", cookie = "{1}", cwd = "{2}" }
+
+# TODO: this should be possible. https://github.com/erlang-ls/erlang_ls/blob/274beb7ff8589622ede3669af5850f7958dcd936/apps/els_dap/src/els_dap_general_provider.erl#L89-L139
+#
+# [[language.debugger.templates]]
+# name = "Rebar3 Shell"
+# request = "launch"
+# completion = [ ]
+# args = { }
