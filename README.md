@@ -40,9 +40,11 @@ used OTP-25 as well as `rebar3` and ErlangLS compiled with OTP-25.
 
 **Rebar3**: https://rebar3.readme.io/docs/getting-started
 
-> Are you using Nix? This repository has a Nix flake and a `shell.nix`.
-> Use `nix develop` (flakes) or `nix-shell` to drop into a shell with
-> all dependencies available.
+---
+
+Are you using Nix? This repository has a Nix flake and a `shell.nix`.
+Use `nix develop` (flakes) or `nix-shell` to drop into a shell with
+all dependencies available.
 
 ## Step 1: An example project
 
