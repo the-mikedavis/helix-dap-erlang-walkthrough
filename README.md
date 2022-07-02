@@ -219,7 +219,7 @@ connected to `dapper` in the `rebar3 shell`:
 [erlang_ls_dap_dapper_119162766@mango]
 ```
 
-<details><summary>You won't see the `erlang_ls_dap_*` process in `nodes()`. Why?...</summary>
+<details><summary>You won't see the <code>erlang_ls_dap_…</code> process in <code>nodes()</code>. Why?...</summary>
 
 The debug adapter is connecting to our node as a [hidden node](https://learnyousomeerlang.com/distribunomicon#hidden-nodes).
 
