@@ -209,7 +209,13 @@ In another terminal, make sure you can still `curl -i localhost:8080` and get
 a reply.
 
 In one more terminal, start up `hx`. Open up `src/dapper_serve.erl` and jump
-down to line 8. Open the debug menu with `<space>d` and bring up the launch
+down to the line where we call `cowboy_req:reply/4`:
+
+```erlang
+Req = cowboy_req:reply(200,
+```
+
+Open up the debug menu with `<space>d` and bring up the launch
 templates with `l`. Select the "Existing Erlang Node" template we created
 earlier and input the values for `NodeName`, `Cookie`, and `Working Directory`.
 I used `dapper@mango`, `dapper_cookie`, and the default value (just hit
