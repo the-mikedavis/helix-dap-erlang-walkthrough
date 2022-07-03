@@ -29,7 +29,9 @@ for this walkthrough, but the newer version the better.
 
 > Note: the current `master` build of ErlangLS has some bugs which
 > I'll address in PRs soon. In the meantime, you can build from
-> [my fork](https://github.com/the-mikedavis/erlang_ls/tree/nopr-flake-dap-fixes).
+> my ErlangLS fork on the
+> [`nopr-flake-dap-fixes`](https://github.com/the-mikedavis/erlang_ls/tree/nopr-flake-dap-fixes)
+> branch.
 
 You'll need the `els_dap` command in `PATH`.
 
