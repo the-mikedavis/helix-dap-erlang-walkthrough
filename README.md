@@ -215,7 +215,7 @@ down to the line where we call `cowboy_req:reply/4`:
 Req = cowboy_req:reply(200,
 ```
 
-Open up the debug menu with `<space>d` and bring up the launch
+Open up the debug menu with `<space>g` and bring up the launch
 templates with `l`. Select the "Existing Erlang Node" template we created
 earlier and input the values for `NodeName`, `Cookie`, and `Working Directory`.
 I used `dapper@mango`, `dapper_cookie`, and the default value (just hit
