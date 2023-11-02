@@ -25,6 +25,10 @@ Helix is available in several package managers across multiple operating
 systems. Helix version 22.03 or later provides the DAP support necessary
 for this walkthrough, but the newer version the better.
 
+**ErlangDAP**: https://github.com/erlang-ls/els_dap#quickstart
+
+You'll need the `els_dap` command in `PATH`.
+
 **ErlangLS**: https://github.com/erlang-ls/erlang_ls#quickstart
 
 > Note: the current `master` build of ErlangLS has some bugs which
@@ -32,8 +36,6 @@ for this walkthrough, but the newer version the better.
 > my ErlangLS fork on the
 > [`nopr-flake-dap-fixes`](https://github.com/the-mikedavis/erlang_ls/tree/nopr-flake-dap-fixes)
 > branch.
-
-You'll need the `els_dap` command in `PATH`.
 
 **Erlang**: https://github.com/erlang/otp#installation
 
