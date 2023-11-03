@@ -29,14 +29,6 @@ for this walkthrough, but the newer version the better.
 
 You'll need the `els_dap` command in `PATH`.
 
-**ErlangLS**: https://github.com/erlang-ls/erlang_ls#quickstart
-
-> Note: the current `master` build of ErlangLS has some bugs which
-> I'll address in PRs soon. In the meantime, you can build from
-> my ErlangLS fork on the
-> [`nopr-flake-dap-fixes`](https://github.com/the-mikedavis/erlang_ls/tree/nopr-flake-dap-fixes)
-> branch.
-
 **Erlang**: https://github.com/erlang/otp#installation
 
 Erlang is nearly ubiquitous in package managers. For this walkthrough I
